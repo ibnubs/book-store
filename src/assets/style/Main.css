@@ -1,0 +1,98 @@
+.main {
+    color: brown;
+    
+}
+
+.kotak{
+    border: 1px solid red;
+}
+
+.container{
+    
+    height: 1800px;
+    text-align: center;
+}
+
+.title-page{
+    font-size: 40px;
+    font-weight: bold;
+    margin: auto;
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+    line-height: 100px;
+}
+
+
+
+.card{
+    margin: 0 20px !important;
+    padding: 40px !important;
+    border: 1px gray solid;
+    width: 200px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px #ccc;
+}
+
+.card img{
+    height: 200px;
+    width: 180px;
+}
+
+.card h4{
+    margin: 20px 0px !important;
+}
+
+.row-card{
+    padding: 40px !important;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.row-author{
+    display: flex;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.col-author{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.col-name-author{
+    font-size: 14px;
+    margin-left: 12px ;
+}
+
+
+/* headercss */
+
+li {
+    list-style: none;
+}
+
+.header {
+    background-color: #26d0c9;
+    color: #fff;
+    height: 90px;
+}
+
+.header-logo {
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px;
+}
+
+.header-list li {
+    float: left;
+    padding: 33px 20px;
+}
+
+
+body *{
+    margin: 0;
+    padding: 0;
+}
