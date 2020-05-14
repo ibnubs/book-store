@@ -75,19 +75,36 @@
 
 
 import React from 'react';
+import { BrowserRouter, Route} from 'react-router-dom'
 import Nav from './components/Nav';
 import Maintitle from './components/Maintitle';
 import Booklist from './components/BookList';
+import Footer from './components/Footer';
 import './assets/style/Main.css'
 
+
 class App extends React.Component {
+
+  add
+
+
   render (){
     return (
-      <div className="container">
-          <Nav />    
-          <Maintitle/>
-          <Booklist/>
-      </div>
+      <BrowserRouter>
+        <Nav />    
+        <Route path="/" exact>
+          <div className="container">
+              
+              <Maintitle/>
+              <Booklist/>
+              
+          </div>
+          </Route>
+          <Route path="/about" exact>
+            <p>test about</p>
+          </Route>
+          <Footer/>
+        </BrowserRouter>  
     )
   }
 }
